@@ -40,7 +40,6 @@ namespace Primos
                     }
                     if (i % j == 0)
                     {
-                        break;
                     }
                     retorno.Add(i);
                 }
