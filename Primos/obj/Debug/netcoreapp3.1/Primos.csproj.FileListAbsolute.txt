@@ -1,0 +1,17 @@
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.exe
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.deps.json
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.runtimeconfig.json
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.runtimeconfig.dev.json
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.dll
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\bin\Debug\netcoreapp3.1\Primos.pdb
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.csprojAssemblyReference.cache
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos_MarkupCompile.cache
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos_MarkupCompile.lref
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.g.resources
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.AssemblyInfoInputs.cache
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.AssemblyInfo.cs
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.dll
+C:\Users\oscar.silva\Documents\GitHub\Primos\Primos\obj\Debug\netcoreapp3.1\Primos.pdb
