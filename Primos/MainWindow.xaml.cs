@@ -33,7 +33,7 @@ namespace Primos
             var numeroMayor = Convert.ToInt32(txtNumeroMayor.Text);
             List<int> retorno = ObtienePrimos(numeroMayor).ToList();
 
-            AgregarPrimosIniciales(ref retorno);
+            agregarPrimosIniciales(ref retorno);
             cargarData(lista, retorno);
         }
         private void btnProcesar_Copy_Click(object sender, RoutedEventArgs e)
@@ -42,13 +42,18 @@ namespace Primos
             var numeroMayor = Convert.ToInt32(txtNumeroMayor_Copy.Text);
             List<int> retorno = ObtienePrimos(numeroMayor).ToList();
 
-            AgregarPrimosIniciales(ref retorno);
+            agregarPrimosIniciales(ref retorno);
 
             cargarData(lista_Copy, retorno);
         }
         #endregion
 
         #region Privados
+        private void agregarPrimosIniciales(ref List<int> retorno)
+        {
+            retorno.Insert(0, 2);
+            retorno.Insert(0, 1);
+        }
         private void cargarData(ListBox lista, List<int> retorno)
         {
             retorno.ForEach(primo => lista.Items.Add(primo));
@@ -76,11 +81,7 @@ namespace Primos
             }
             return retorno;
         }
-        private void AgregarPrimosIniciales(ref List<int> retorno)
-        {
-            retorno.Insert(0, 2);
-            retorno.Insert(0, 1);
-        }
+        
         #endregion
 
     }
