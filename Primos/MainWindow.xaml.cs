@@ -25,12 +25,40 @@ namespace Primos
             InitializeComponent();
         }
 
+        #region Botones
+
         private void btnProcesar_Click(object sender, RoutedEventArgs e)
         {
+            lista.Items.Clear();
             var numeroMayor = Convert.ToInt32(txtNumeroMayor.Text);
+            List<int> retorno = ObtienePrimos(numeroMayor).ToList();
+
+            AgregarPrimosIniciales(ref retorno);
+            cargarData(lista, retorno);
+        }
+        private void btnProcesar_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            lista_Copy.Items.Clear();
+            var numeroMayor = Convert.ToInt32(txtNumeroMayor_Copy.Text);
+            List<int> retorno = ObtienePrimos(numeroMayor).ToList();
+
+            AgregarPrimosIniciales(ref retorno);
+
+            cargarData(lista_Copy, retorno);
+        }
+        #endregion
+
+        #region Privados
+        private void cargarData(ListBox lista, List<int> retorno)
+        {
+            retorno.ForEach(primo => lista.Items.Add(primo));
+        }
+
+        private ICollection<int> ObtienePrimos(int maximo)
+        {
             var retorno = new List<int>();
 
-            for (var i = 1; i <= numeroMayor; i++)
+            for (var i = 1; i <= maximo; i++)
             {
                 for (var j = 1; j <= i; j++)
                 {
@@ -40,11 +68,20 @@ namespace Primos
                     }
                     if (i % j == 0)
                     {
+                        break;
                     }
-                    retorno.Add(i);
+                    if (!retorno.Exists(x => x == i))
+                    { retorno.Add(i); }
                 }
             }
-            dgPrimos.ItemsSource = retorno;
+            return retorno;
         }
+        private void AgregarPrimosIniciales(ref List<int> retorno)
+        {
+            retorno.Insert(0, 2);
+            retorno.Insert(0, 1);
+        }
+        #endregion
+
     }
 }

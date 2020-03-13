@@ -6,14 +6,18 @@
         xmlns:local="clr-namespace:Primos"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="0,0,10,0">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="txtNumeroMayor" HorizontalAlignment="Left" Margin="220,81,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Número Máximo" HorizontalAlignment="Left" Margin="98,81,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnProcesar" Content="Procesar" HorizontalAlignment="Left" Margin="400,99,0,0" VerticalAlignment="Top" Click="btnProcesar_Click"/>
-        <DataGrid x:Name="dgPrimos" Margin="98,148,385,61"/>
+        <TextBox x:Name="txtNumeroMayor" HorizontalAlignment="Left" Margin="152,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Número Máximo" HorizontalAlignment="Left" Margin="47,34,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnProcesar" Content="Procesar" HorizontalAlignment="Left" Margin="223,38,0,0" VerticalAlignment="Top" Click="btnProcesar_Click"/>
+        <ListBox x:Name="lista" Margin="46,76,518,162"/>
+        <TextBox x:Name="txtNumeroMayor_Copy" HorizontalAlignment="Left" Margin="556,38,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Label Content="Número Máximo" HorizontalAlignment="Left" Margin="451,34,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnProcesar_Copy" Content="Procesar" HorizontalAlignment="Left" Margin="627,38,0,0" VerticalAlignment="Top" Click="btnProcesar_Copy_Click"/>
+        <ListBox x:Name="lista_Copy" Margin="450,76,114,162"/>
 
     </Grid>
 </Window>
